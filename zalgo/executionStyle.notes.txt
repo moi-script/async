@@ -1,0 +1,33 @@
+
+// In javascript we have different style use for execution 
+
+-- Direct style 
+
+    It uses return statement in order to process the codes line by line
+    it almost look synchronous but sometimes not, for example using return statement
+    in asynchronous function
+
+-- Continous Passing Style (CPS)
+
+    It greatly relies on invoking a function inside another function, 
+    example, callback -> callback is a function that was passed as an argument to another function
+    When invoke in that function it will be a passing style
+
+-- Synchronous 
+
+    This is the process where in all of functions that comes will be read line by line
+    or FIFO function execution in the event loop queue, 
+
+-- Asynchronous 
+
+    This is an execution that takes a while, meaning all synchronous function will be prioritize before asynchronous
+
+
+
+
+// 1. Next task is to solidify this four fundamentals
+
+// 2. In order to process the differed execution of nodejs module
+// 3. Different hashing strategy
+// 4. Fs, URL, path, buffer
+// 6. Child process 
