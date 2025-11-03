@@ -41,8 +41,6 @@ function requestServer(url, cb) {
 
     const urls = new URL(url);
 
-
-
     console.log('Url ::', urls);
     console.log('base :: ', base);
     const options = {
