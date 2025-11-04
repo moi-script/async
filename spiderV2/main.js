@@ -37,6 +37,7 @@ function requestServer(url, cb) {
     })
         .catch(err => cb(err));
 }
+
 function saveFile(_filename, data, cb) {
     // console.log('Filename ::', _filename);
     // console.log('url to file name ::', urlToFileName(_filename));
@@ -88,7 +89,6 @@ function spiderLinks(currentUrl, body, nesting, cb) {
 
         spider(links[index], nesting - 1, function (err) {
             if (err) return cb(err)
-
             iterate(index + 1);
         })
     }
@@ -100,7 +100,6 @@ function spider(url, nesting, cb) {
     const _filename = path.basename(url.pathname);
 
     console.log(chalk.green("Filename " + _filename));
-
 
     fs.access(_filename, (err) => {
         if (err && (err.code === 'ENOENT')) {
@@ -115,13 +114,11 @@ function spider(url, nesting, cb) {
     })
 }
 
-
-
 // pathdir -> .\http:\localhost:4000\spiderV2\hello.txt 
 
-// pathNameFromUrl -> /spiderV2/hello/new.txt'
+//  pathNameFromUrl-> /spiderV2/hello/new.txt'
 
-const url = process.argv[2]
+const url = process.argv[2];
 const nesting = Number.parseInt(process.argv[3], 10) || 1
 
 spider(url, nesting, err => {

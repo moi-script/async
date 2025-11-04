@@ -1,0 +1,15 @@
+
+• Executing a set of known tasks in sequence, without propagating data across them.
+    task1() -> task2() -> task3() -> task4()
+
+
+• Using the output of a task as the input for the next (also known as chain, pipeline, or waterfall).
+    task1(data1, data2) -> task2(data2, data3) -> task3(data3, data4) -> output 
+
+
+• Iterating over a collection while running an asynchronous task on each element, one after the other.
+    task1() [wait] -> task2() [wait] -> task3() [wait] -> task4() [wait]
+
+
+
+

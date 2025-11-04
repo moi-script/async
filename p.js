@@ -117,9 +117,9 @@ path.join('/foo', 'bar', 'baz/asdf', 'quux', '..'); // it concatenates parameter
 // }
 
 
-path.sep // a '/' in window separator, 
-
-
-
+// path.sep // a '/' in window separator, 
 
 // console.log(path.parse(path.basename('/hello/new.txt')).name);
+
+
+

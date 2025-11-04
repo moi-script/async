@@ -1,0 +1,9 @@
+ -- Sequential Execution 
+    If we know how large the execution processes we can simple use this
+
+-- Parallel Execution 
+    Multiple concurrent task 
+    Needs to fixed the race conditions
+
+-- Limited Parallel Execution
+    

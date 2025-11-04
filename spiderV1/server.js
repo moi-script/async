@@ -1,14 +1,12 @@
 import http from 'http';
 import fs from 'fs';
+import { fileGeneration } from '../../stream/test/tasks/task4_FileGenerator/exp.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 
+const subFilelist = fs.readdirSync('\generated');
 
-
-// 'Content-Length': Buffer.byteLength(body),
-//     'Content-Type': 'text/plain',
-
-
-const responseText = fs.readFileSync('resp.txt');
 
 const server = http.createServer((req, res) => {
 

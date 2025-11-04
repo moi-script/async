@@ -1,7 +1,6 @@
 const url = new URL('https://user:pass@sub.example.com:8080/path/page.html?search=query#section1');
 
 
-
 // URL {
 //   href: 'https://user:pass@sub.example.com:8080/path/page.html?search=query#section1',
 //   origin: 'https://sub.example.com:8080',
